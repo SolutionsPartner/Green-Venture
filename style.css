@@ -18,7 +18,7 @@ padding: 0;
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding:18px 80px;
+padding:10px 70px;
 margin-bottom: 0;
 
 position:fixed;
@@ -87,7 +87,7 @@ text-decoration:none;
 }
 
 .logo-text{
-font-size:20px;
+font-size:15px;
 font-weight:600;
 color:#117a5b;
 }
@@ -97,11 +97,37 @@ color:#117a5b;
     width: auto;
 }
 
+
+
+.footer-logo {
+  display: flex;
+  align-items: center;  /* vertically centers logo and text */
+  gap: 10px;            /* spacing between logo image and text */
+  margin-bottom: 15px;  /* space below for next line */
+}
+
+.footer-logo-img {
+  height: 40px;        /* adjust size */
+  width: auto;
+  display: block;
+  margin: 0;           /* remove any extra margin */
+}
+
+.footer-logo h3 {
+  font-size: 20px;
+  color: #ffffff;
+  margin: 0;           /* remove default margin */
+  font-weight: 600;
+  line-height: 1;      /* align baseline with logo */
+}
+
+
+
 /* NAV LINKS */
 
 .nav-menu{
 display:flex;
-gap:35px;
+gap:20px;
 }
 
 .nav-menu a{
@@ -124,7 +150,7 @@ color:#10b981;
 .nav-menu a{
 text-decoration:none;
 color:black;
-font-size:15px;
+font-size:13px;
 
 padding:8px 16px;          /* SAME padding for all */
 border-radius:22px;        /* same shape */
@@ -185,7 +211,7 @@ background:#059669;
 
 
 .hero{
-height:100vh;
+min-height:100vh;
 background-image:linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url("images/home.jpg");
 background-size:cover;
 background-position:center;
@@ -208,11 +234,11 @@ color:#34d399;
 letter-spacing:3px;
 margin-bottom:30px;
 text-align: center;
-font-size: 15px;
+font-size: 14px;
 }
 
 .hero h1{
-font-size:80px;
+font-size:60px;
 font-weight:bold;
 line-height:1.2;
 margin-bottom:20px;
@@ -220,7 +246,7 @@ text-align: center;
 }
 
 .hero p{
-font-size:18px;
+font-size:15px;
 margin-bottom:30px;
 color:#e5e7eb;
 }
@@ -237,6 +263,7 @@ padding:12px 25px;
 border-radius:30px;
 text-decoration:none;   
 color:white;
+font-size: 15px;
 }
 
 .btn-secondary{
@@ -245,6 +272,7 @@ padding:12px 25px;
 border-radius:30px;
 text-decoration:none;
 color:white;
+font-size: 15px;
 }
 
 
@@ -380,16 +408,32 @@ text-align:center;
 }
 
 .stat-box h2{
-font-size:50px;
+font-size:40px;
 font-weight:bold;
 margin-bottom:10px;
 }
 
-.stat-box p{
-font-size:16px;
+.stat-box p{    
+font-size:14px;
 color:#d1fae5;
 }
 
+
+.view-all-btn {
+  display: inline-block;
+  background: #10b981; /* theme green */
+  padding: 12px 25px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.view-all-btn:hover {
+  background: #059669;
+  transform: scale(1.05);
+}
 
 
 /* PRODUCTS SECTION */
@@ -466,6 +510,50 @@ grid-row:span 2;
 .wide{
 grid-column:span 2;
 }
+
+
+
+/* Product Card Overlay */
+.product-card {
+  position: relative; /* needed for overlay positioning */
+  overflow: hidden;
+}
+
+/* Arrow Button */
+.overlay .arrow-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: rgba(255,255,255,0.25); /* glass effect */
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  padding: 8px 14px;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #000000;   /* green theme */
+  text-decoration: none;
+  opacity: 0;        /* hidden by default */
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}   
+
+/* Show button on hover */
+.product-card:hover .overlay .arrow-btn {
+  opacity: 1;
+}
+
+/* Hover effect */
+.overlay .arrow-btn:hover {
+  background: rgba(16,185,129,0.15);
+  transform: scale(1.1);
+}
+
+
+
+
+
 
 
 /* DARK GRADIENT */
@@ -593,7 +681,7 @@ gap:30px;
 
 .gallery-item{
 width:100%;
-height: 370px;   /* for box size  */
+height: 270px;   /* for box size  */
 overflow:hidden;
 border-radius:12px;
 box-shadow:0 6px 20px rgba(0,0,0,0.08);
@@ -619,6 +707,11 @@ transform:scale(1.08);
 
 
 
+
+/* SERVICES SECTION */
+/* SERVICES SECTION */
+/* SERVICES SECTION */
+/* SERVICES SECTION */
 /* SERVICES SECTION */
 
 .services{
@@ -661,7 +754,7 @@ margin:auto;
 background:white;
 padding:40px 30px;
 border-radius:12px;
-width:320px;
+width:350px;
 text-align:left;
 transition:0.3s;
 }
@@ -674,8 +767,8 @@ box-shadow:0 10px 25px rgba(0,0,0,0.08);
 /* ICON BOX */
 
 .icon-box{
-width:55px;
-height:55px;
+width:40px;
+height:40px;
 background:#e8f7ef;
 display:flex;
 align-items:center;
@@ -764,7 +857,7 @@ max-width:700px;
 }
 
 .consultation h2{
-font-size:42px;
+font-size:32px;
 font-weight:700;
 margin-bottom:20px;
 }
@@ -786,7 +879,7 @@ border:none;
 background:white;
 color:#16a34a;
 cursor:pointer;
-transition:0.3s;
+transition:0.9s;
 }
 
 .consult-btn:hover{
@@ -1106,6 +1199,7 @@ background:#117a5b;
 color:white;
 
 padding:20px 28px;
+
 
 border-radius:12px;
 
@@ -1866,7 +1960,16 @@ line-height:1.6;
 
 
 
-
+/* projects page */
+/* projects page */
+/* projects page */
+/* projects page */
+/* projects page */
+/* projects page */
+/* projects page */
+/* projects page */
+/* projects page */
+/* projects page */
 
 
 
