@@ -12,6 +12,41 @@ margin:0;
 padding: 0;
 }
 
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  flex: 1 1 300px;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .box {
+    flex: 1 1 100%;
+  }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 /* NAVBAR */
 
 .navbar{
@@ -449,7 +484,8 @@ margin-bottom:60px;
 }
 
 .section-tag{
-color:#16a34a;
+/* color:#16a34a; */
+color:#000000;
 font-size:13px;
 letter-spacing:3px;
 margin-bottom:10px;
