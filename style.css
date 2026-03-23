@@ -1,3 +1,4 @@
+/* FIX OVERFLOW ISSUE EVERYWHERE */
 * {
   margin: 0;
   padding: 0;
@@ -6,7 +7,6 @@
 
 html, body {
   overflow-x: hidden;
-  font-family: Arial, sans-serif;
 }
 
 img {
@@ -40,13 +40,14 @@ section img {
 display:flex;
 align-items:center;
 justify-content:space-between;
-padding: 10px 40px;
+padding: 15px 40px;
 margin-bottom: 0;
 
 position:fixed;
 top:0;
 width:100%;
 z-index:1000;
+height: auto;
 
 /* glass effect */
 background:rgba(255,255,255,0.75);
@@ -68,16 +69,23 @@ text-decoration:none;
 transition:0.3s;
 }
 
+
+
+
+
+/* changes code */
 .nav-quote-btn:hover{
 background:#0e5f46;
 }
 
 
 
+.hero {
+  margin-top: 80px; /* prevents navbar overlap */
+}
 
 
-
-
+/* changes code */
 
 
 
@@ -2496,6 +2504,92 @@ color:#6b7280;
 
   .logo-img {
     height: 40px;
+  }
+
+}
+
+
+
+
+
+
+
+/* changes code */
+
+
+
+.container,
+.row,
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;   /* 🔥 THIS FIXES CUT CONTENT */
+  gap: 20px;
+}
+
+
+
+
+.contact-left,
+.contact-right {
+  flex: 1;
+  min-width: 280px;  /* 🔥 prevents cutting */
+}
+
+
+
+
+
+
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-box {
+  flex: 1;
+  min-width: 200px;
+}
+
+
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+
+
+/* changes code */
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero {
+    margin-top: 100px;
+  }
+
+  .container,
+  .row,
+  .contact-container {
+    flex-direction: column;
   }
 
 }
