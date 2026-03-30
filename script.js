@@ -1,11 +1,6 @@
-// window.addEventListener("scroll",function(){
-// let cards=document.querySelectorAll(".card");
+const toggle = document.getElementById("menuToggle");
+const menu = document.getElementById("navMenu");
 
-// cards.forEach(card=>{
-// let position=card.getBoundingClientRect().top;
-
-// if(position<window.innerHeight){
-// card.classList.add("show");
-// }
-// });
-// });
+toggle.addEventListener("click", () => {
+    menu.classList.toggle("active");
+});

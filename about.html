@@ -1,44 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>About | Green Venture</title>
-
-<!-- CSS FILE -->
+<title>Green Venture</title>
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/logo.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 </head>
-
 
 <body>
 
 <!-- NAVBAR -->
 
+
 <header class="navbar">
 
-<div class="logo">
-<a href="index.html" class="logo-link">
+    <div class="logo">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Green Venture Logo" class="logo-img">
+        <span class="logo-text">Green Venture</span>
+      </a>
+      <div class="menu-toggle" id="menuToggle" style="color: black;">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
 
-<img src="images/logo.png" alt="Green Venture Logo" class="logo-img">
 
-<span class="logo-text">Green Venture</span>
-
-</a>
-</div>
-
-<!-- <div class="logo">
-
-<div class="logo-icon">GV</div>
-<span class="logo-text">Green Venture</span>
-
-</div> -->
-
-<nav class="nav-menu">
+<nav class="nav-menu" id="navMenu">
 
 <a href="index.html">Home</a>
 <a href="about.html" class="active">About</a>
@@ -61,15 +51,16 @@
 
 <section class="about-hero">
 
-<div class="about-hero-content">
+<div class="about-hero-content" >
 
 <!-- <p class="about-tag">About Green Venture</p> -->
 
+<p class="products-tag">About US</p>
+
 <h1>
-Engineering Sustainable <br>
+Engineering Sustainable<br>
 Energy for Tomorrow.
 </h1>
-
 
 </div>
 
@@ -292,7 +283,6 @@ bring expertise, innovation, and passion to every solar project.
 
 
 
-
 <footer class="footer">
 
 <div class="footer-container">
@@ -307,7 +297,7 @@ bring expertise, innovation, and passion to every solar project.
 </div>
 
 <p class="footer-desc">
-Engineering sustainable energy solutions for homes, businesses, 
+Engineering sustainable energy solutions for homes, businesses,<br/>
 and communities across India. Powering tomorrow with intelligent 
 green technology.
 </p>
@@ -322,20 +312,20 @@ green technology.
 
 <div class="footer-social">
 
-<a href="https://www.instagram.com" target="_blank">
-<i data-lucide="instagram"></i>
+<a href="https://www.instagram.com" target="_blank" class="social instagram">
+    <i class="fa-brands fa-instagram"></i>
 </a>
 
-<a href="https://www.facebook.com" target="_blank">
-<i data-lucide="facebook"></i>
+<a href="https://www.facebook.com" target="_blank" class="social facebook">
+    <i class="fa-brands fa-facebook"></i>
 </a>
 
-<a href="https://twitter.com" target="_blank">
-<i data-lucide="twitter"></i>
+<a href="https://twitter.com" target="_blank" class="social twitter">
+    <i class="fa-brands fa-twitter"></i>
 </a>
 
-<a href="https://www.google.com" target="_blank">
-<i data-lucide="globe"></i>
+<a href="https://wa.me/919065736623" target="_blank" class="social whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
 </a>
 
 </div>
@@ -344,6 +334,15 @@ green technology.
 
 
 <!-- Column 2 -->
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
 
 <div class="footer-col">
 
@@ -360,6 +359,7 @@ green technology.
 
 
 <!-- Column 3 -->
+<div class="footer-col"></div>
 
 <div class="footer-col">
 
@@ -377,7 +377,9 @@ green technology.
 
 <!-- Column 4 -->
 
-<div class="footer-col">
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col" style="float:right;">
 
 <h4>Support</h4>
 
@@ -412,11 +414,12 @@ green technology.
 
 </footer>
 
+
 <script src="https://unpkg.com/lucide@latest"></script>
 
 <script>
 lucide.createIcons();
 </script>
-
+<script src="script.js"></script>
 </body>
 </html>

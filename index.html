@@ -4,8 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Green Venture</title>
-
 <link rel="stylesheet" href="style.css">
+<link rel="icon" href="images/logo.png"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -17,17 +17,17 @@
 
 <header class="navbar">
 
-<div class="logo">
-<a href="index.html" class="logo-link">
+    <div class="logo">
+      <a href="index.html" class="logo-link">
+        <img src="images/logo.png" alt="Green Venture Logo" class="logo-img">
+        <span class="logo-text">Green Venture</span>
+      </a>
+      <div class="menu-toggle" id="menuToggle" style="color: black;">
+        <i class="fa fa-bars"></i>
+      </div>
+    </div>
 
-<img src="images/logo.png" alt="Green Venture Logo" class="logo-img">
-
-<span class="logo-text">Green Venture</span>
-
-</a>
-</div>
-
-<nav class="nav-menu">
+<nav class="nav-menu" id="navMenu">
 
 <a href="index.html" class="active">Home</a>
 <a href="about.html">About</a>
@@ -58,8 +58,8 @@
 <section class="hero">
 
     <div class="hero-content">
-
-        <h4>SUSTAINABLE ENERGY SOLUTIONS</h4>
+       
+       <!-- <h4 class="sustainable-title">SUSTAINABLE ENERGY SOLUTIONS</h4> -->
 
         <h1>
             Powering Tomorrow <br>
@@ -128,7 +128,7 @@
 <section class="products">
 
     <div class="products-header">
-        <p class="section-tag">OUR PRODUCTS</p>
+        <p class="section-tag"><b>OUR PRODUCTS</b></p>
         <h2>Solar Solutions for Every Scale</h2>
     </div>
 
@@ -154,7 +154,7 @@
         <!-- Street Light -->
         <div class="product-card">
 
-            <img src="https://images.unsplash.com/photo-1593941707882-a5bba53b36c9">
+            <img src="https://5.imimg.com/data5/SELLER/Default/2025/2/492321944/AN/AH/SR/229220123/whatsapp-image-2025-02-28-at-4-10-53-pm-1000x1000.jpeg">
 
             <div class="overlay">
                 <a href="projects.html" class="arrow-btn">></a>
@@ -351,7 +351,7 @@ Schedule Consultation →
 </div>
 
 <p class="footer-desc">
-Engineering sustainable energy solutions for homes, businesses, 
+Engineering sustainable energy solutions for homes, businesses,<br/>
 and communities across India. Powering tomorrow with intelligent 
 green technology.
 </p>
@@ -365,22 +365,23 @@ green technology.
 <!-- SOCIAL MEDIA ICONS -->
 
 <div class="footer-social">
-
-<a href="https://www.instagram.com" target="_blank">
-<i data-lucide="instagram"></i>
+<a href="https://www.instagram.com" target="_blank" class="social instagram">
+    <i class="fa-brands fa-instagram"></i>
 </a>
 
-<a href="https://www.facebook.com" target="_blank">
-<i data-lucide="facebook"></i>
+<a href="https://www.facebook.com" target="_blank" class="social facebook">
+    <i class="fa-brands fa-facebook"></i>
 </a>
 
-<a href="https://twitter.com" target="_blank">
-<i data-lucide="twitter"></i>
+<a href="https://twitter.com" target="_blank" class="social twitter">
+    <i class="fa-brands fa-twitter"></i>
 </a>
 
-<a href="https://www.google.com" target="_blank">
-<i data-lucide="globe"></i>
+<a href="https://wa.me/919065736623" target="_blank" class="social whatsapp">
+    <i class="fa-brands fa-whatsapp"></i>
 </a>
+
+
 
 </div>
 
@@ -388,6 +389,15 @@ green technology.
 
 
 <!-- Column 2 -->
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col"></div>
 
 <div class="footer-col">
 
@@ -404,6 +414,7 @@ green technology.
 
 
 <!-- Column 3 -->
+<div class="footer-col"></div>
 
 <div class="footer-col">
 
@@ -421,7 +432,9 @@ green technology.
 
 <!-- Column 4 -->
 
-<div class="footer-col">
+<div class="footer-col"></div>
+<div class="footer-col"></div>
+<div class="footer-col" style="float:right;">
 
 <h4>Support</h4>
 
@@ -462,6 +475,7 @@ green technology.
 <script>
 lucide.createIcons();
 </script>
+<script src="script.js"></script>
 
 </body>
 </html>
