@@ -156,7 +156,7 @@ section img {
 .logo {
     display: flex;
     align-items: center;
-    gap: 160%;
+    gap: 120%;
 }
 
 .logo-icon {
