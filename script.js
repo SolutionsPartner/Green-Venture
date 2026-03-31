@@ -9,3 +9,15 @@ toggle.addEventListener("click", () => {
         btn.style.display = "none"; // hide
     }
 });
+
+
+const faqs = document.querySelectorAll(".faq-question");
+
+faqs.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const answer = btn.nextElementSibling;
+
+    answer.style.maxHeight = 
+      answer.style.maxHeight ? null : answer.scrollHeight + "px";
+  });
+});

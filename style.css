@@ -2116,7 +2116,7 @@ section img {
 
 .projects-hero {
   height: 450px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/3.avif');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/Product 14.webP');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -2212,7 +2212,7 @@ section img {
 .blog-hero {
 
   height: 450px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/6.webp');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/Product13.webp');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -2836,4 +2836,116 @@ img {
       rgba(0, 0, 0, 0.9),
       rgba(0, 0, 0, 0.5),
       transparent);
+}
+
+
+
+
+
+
+
+
+
+
+.blog-full {
+  padding: 60px 8%;
+  background: #f8f9fa;
+}
+
+.blog-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.blog-post {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.blog-post:hover {
+  transform: translateY(-5px);
+}
+
+.blog-post h2 {
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.blog-post h4 {
+  margin-top: 20px;
+  color: #2e7d32;
+}
+
+.blog-post p {
+  color: #555;
+  line-height: 1.7;
+}
+
+.blog-post ul {
+  padding-left: 20px;
+  margin-top: 10px;
+}
+
+.blog-post ul li {
+  margin-bottom: 8px;
+}
+
+
+
+.faq-section {
+  padding: 60px 8%;
+  background: #f9f9f9;
+}
+
+.faq-heading {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.faq-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq-item {
+  background: #fff;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.faq-question {
+  width: 100%;
+  padding: 18px;
+  text-align: left;
+  border: none;
+  outline: none;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.faq-question:hover {
+  background: #f1f1f1;
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding: 0 18px;
+}
+
+.faq-answer p {
+  padding: 15px 0;
+  color: #555;
 }
