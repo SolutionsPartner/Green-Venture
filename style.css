@@ -2116,7 +2116,7 @@ section img {
 
 .projects-hero {
   height: 450px;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/Product 14.webP');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/Product 14.webp');
   background-size: cover;
   background-position: center;
   display: flex;
