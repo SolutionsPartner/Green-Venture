@@ -42,6 +42,8 @@ images.forEach(img => {
     lightbox.classList.add("show");
     lightboxImg.src = img.src;
   });
+
+  console.log("hellp");
 });
 
 // CLOSE BUTTON
