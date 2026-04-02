@@ -2372,7 +2372,7 @@ section img {
 
 .contact-hero {
   height: 450px;
-  background: #020b1e;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/Section-hero.jpeg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -3028,12 +3028,14 @@ img {
 
 /* HERO SECTION */
 .contact-hero {
-  height: 60vh;
-  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)),
-              url('images/solar-bg.jpg') center/cover no-repeat;
+  height: 450px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('images/Product13.webp');
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
-  padding: 60px;
+  justify-content: center;
+  text-align: center;
   color: white;
 }
 
@@ -3322,4 +3324,41 @@ img {
 .lightbox.show .close {
   opacity: 1;
   transform: translateY(0);
+}
+
+#submit-btn {
+  position: relative;
+  padding: 10px 20px;
+  background: #2ecc71;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-top: 3px solid transparent;
+  border-radius: 50%;
+  margin-left: 10px;
+  display: none;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading .loader {
+  display: inline-block;
+}
+
+.loading .btn-text {
+  opacity: 0.7;
 }
