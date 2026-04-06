@@ -2607,6 +2607,8 @@ textarea {
   section {
     padding: 40px 20px !important;
   }
+  
+    .profile-grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 480px) {
@@ -2628,7 +2630,7 @@ textarea {
   .logo-img {
     height: 40px;
   }
-
+  .profile-grid { grid-template-columns: 1fr; }
 }
 
 
